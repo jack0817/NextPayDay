@@ -18,6 +18,16 @@
 		B73D17CB1FAAD0CC00249DC7 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D17CA1FAAD0CC00249DC7 /* SplashViewController.swift */; };
 		B73D17CD1FAAD0F300249DC7 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73D17CC1FAAD0F300249DC7 /* Splash.storyboard */; };
 		B73D17CF1FAAD1BE00249DC7 /* AppContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D17CE1FAAD1BE00249DC7 /* AppContainerViewController.swift */; };
+		B7F5C8861FAAD803008A971C /* DataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5C8851FAAD803008A971C /* DataContext.swift */; };
+		B7F5C89C1FAADC99008A971C /* Interval+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5C8981FAADC99008A971C /* Interval+CoreDataClass.swift */; };
+		B7F5C89D1FAADC99008A971C /* Interval+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5C8991FAADC99008A971C /* Interval+CoreDataProperties.swift */; };
+		B7F5C8A11FAADE39008A971C /* ModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5C8A01FAADE39008A971C /* ModelExtensions.swift */; };
+		B7F5C8A41FAADEA6008A971C /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5C8A21FAADEA6008A971C /* Account+CoreDataClass.swift */; };
+		B7F5C8A51FAADEA6008A971C /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5C8A31FAADEA6008A971C /* Account+CoreDataProperties.swift */; };
+		B7F5C8A81FAAE0B5008A971C /* DataAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5C8A71FAAE0B5008A971C /* DataAccessor.swift */; };
+		B7F5C8AA1FAAE0EB008A971C /* AccountAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5C8A91FAAE0EB008A971C /* AccountAccessor.swift */; };
+		B7F5C8AC1FAAE2D0008A971C /* IntervalAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5C8AB1FAAE2D0008A971C /* IntervalAccessor.swift */; };
+		B7F5C8AE1FAAF208008A971C /* NextPayDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5C8AD1FAAF208008A971C /* NextPayDayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +65,16 @@
 		B73D17CA1FAAD0CC00249DC7 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		B73D17CC1FAAD0F300249DC7 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		B73D17CE1FAAD1BE00249DC7 /* AppContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainerViewController.swift; sourceTree = "<group>"; };
+		B7F5C8851FAAD803008A971C /* DataContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContext.swift; sourceTree = "<group>"; };
+		B7F5C8981FAADC99008A971C /* Interval+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interval+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B7F5C8991FAADC99008A971C /* Interval+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interval+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B7F5C8A01FAADE39008A971C /* ModelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelExtensions.swift; sourceTree = "<group>"; };
+		B7F5C8A21FAADEA6008A971C /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B7F5C8A31FAADEA6008A971C /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B7F5C8A71FAAE0B5008A971C /* DataAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccessor.swift; sourceTree = "<group>"; };
+		B7F5C8A91FAAE0EB008A971C /* AccountAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAccessor.swift; sourceTree = "<group>"; };
+		B7F5C8AB1FAAE2D0008A971C /* IntervalAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalAccessor.swift; sourceTree = "<group>"; };
+		B7F5C8AD1FAAF208008A971C /* NextPayDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPayDayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +125,7 @@
 		B73D17951FAACC7200249DC7 /* NextPayDay */ = {
 			isa = PBXGroup;
 			children = (
+				B7F5C8841FAAD7EC008A971C /* Data */,
 				B73D17C81FAACCCA00249DC7 /* ViewControllers */,
 				B73D17C91FAACCD500249DC7 /* UI */,
 				B73D17C71FAACCB600249DC7 /* Resources */,
@@ -147,6 +168,7 @@
 				B73D17981FAACC7200249DC7 /* ViewController.swift */,
 				B73D17CE1FAAD1BE00249DC7 /* AppContainerViewController.swift */,
 				B73D17CA1FAAD0CC00249DC7 /* SplashViewController.swift */,
+				B7F5C8AD1FAAF208008A971C /* NextPayDayViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -159,6 +181,38 @@
 				B73D17CC1FAAD0F300249DC7 /* Splash.storyboard */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		B7F5C8841FAAD7EC008A971C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B7F5C8871FAADBFB008A971C /* Models */,
+				B7F5C8A61FAAE0A2008A971C /* Accessors */,
+				B7F5C8851FAAD803008A971C /* DataContext.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B7F5C8871FAADBFB008A971C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B7F5C8A21FAADEA6008A971C /* Account+CoreDataClass.swift */,
+				B7F5C8A31FAADEA6008A971C /* Account+CoreDataProperties.swift */,
+				B7F5C8981FAADC99008A971C /* Interval+CoreDataClass.swift */,
+				B7F5C8991FAADC99008A971C /* Interval+CoreDataProperties.swift */,
+				B7F5C8A01FAADE39008A971C /* ModelExtensions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B7F5C8A61FAAE0A2008A971C /* Accessors */ = {
+			isa = PBXGroup;
+			children = (
+				B7F5C8A71FAAE0B5008A971C /* DataAccessor.swift */,
+				B7F5C8A91FAAE0EB008A971C /* AccountAccessor.swift */,
+				B7F5C8AB1FAAE2D0008A971C /* IntervalAccessor.swift */,
+			);
+			path = Accessors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,9 +351,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73D17991FAACC7200249DC7 /* ViewController.swift in Sources */,
+				B7F5C8AC1FAAE2D0008A971C /* IntervalAccessor.swift in Sources */,
+				B7F5C8A51FAADEA6008A971C /* Account+CoreDataProperties.swift in Sources */,
+				B7F5C8A81FAAE0B5008A971C /* DataAccessor.swift in Sources */,
+				B7F5C8A41FAADEA6008A971C /* Account+CoreDataClass.swift in Sources */,
+				B7F5C8861FAAD803008A971C /* DataContext.swift in Sources */,
 				B73D179F1FAACC7200249DC7 /* NextPayDay.xcdatamodeld in Sources */,
 				B73D17971FAACC7200249DC7 /* AppDelegate.swift in Sources */,
+				B7F5C8AE1FAAF208008A971C /* NextPayDayViewController.swift in Sources */,
+				B7F5C89D1FAADC99008A971C /* Interval+CoreDataProperties.swift in Sources */,
 				B73D17CB1FAAD0CC00249DC7 /* SplashViewController.swift in Sources */,
+				B7F5C8A11FAADE39008A971C /* ModelExtensions.swift in Sources */,
+				B7F5C89C1FAADC99008A971C /* Interval+CoreDataClass.swift in Sources */,
+				B7F5C8AA1FAAE0EB008A971C /* AccountAccessor.swift in Sources */,
 				B73D17CF1FAAD1BE00249DC7 /* AppContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

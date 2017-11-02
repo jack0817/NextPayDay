@@ -41,18 +41,34 @@
         <!--Next PayDay-->
         <scene sceneID="Ogs-Lo-abf">
             <objects>
-                <tableViewController id="LFU-TE-GLj" sceneMemberID="viewController">
+                <tableViewController id="LFU-TE-GLj" customClass="NextPayDayViewController" customModule="NextPayDay" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9iz-Wh-zBY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lah-MW-17z">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountCell" textLabel="EbT-Q7-HMY" detailTextLabel="ckl-Zv-Ghw" style="IBUITableViewCellStyleSubtitle" id="lah-MW-17z">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lah-MW-17z" id="SBi-cf-1fa">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EbT-Q7-HMY">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ckl-Zv-Ghw">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -62,9 +78,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Next PayDay" id="cSc-uA-gv7">
-                        <barButtonItem key="rightBarButtonItem" title="Accounts" id="jv9-fN-Wy2">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="jv9-fN-Wy2">
                             <connections>
-                                <segue destination="9D9-X2-qXf" kind="show" id="5M5-f2-BCL"/>
+                                <segue destination="hAC-Cg-qOO" kind="show" id="dAh-0u-YA1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -73,23 +89,21 @@
             </objects>
             <point key="canvasLocation" x="1713" y="68"/>
         </scene>
-        <!--Accounts-->
-        <scene sceneID="J2P-NQ-wju">
+        <!--Settings-->
+        <scene sceneID="jhk-wq-yXv">
             <objects>
-                <viewController id="9D9-X2-qXf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Cmb-eu-N2l">
+                <viewController id="hAC-Cg-qOO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="520-4O-re1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="994-Sz-fys"/>
+                        <viewLayoutGuide key="safeArea" id="7T2-yH-N0c"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Accounts" id="BKW-Wp-Ltm">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wwG-e2-KDL"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Settings" id="IoP-aV-BdH"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pDE-ce-qrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gBH-zY-85d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2522" y="68"/>
+            <point key="canvasLocation" x="2615" y="68"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qg1-E1-cWE">

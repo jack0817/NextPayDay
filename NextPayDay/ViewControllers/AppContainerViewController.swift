@@ -11,6 +11,8 @@ import UIKit
 
 public class AppContainerViewController: UIViewController {
     
+    @IBOutlet private var mainViewController: UIViewController!
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
         showSplashView()
@@ -28,6 +30,7 @@ public class AppContainerViewController: UIViewController {
     }
     
     private func handleSplashDidLoadApplication(for splashViewController: SplashViewController) {
+        childViewControllers.first?.viewWillAppear(true)
         UIView.animate(
             withDuration: 0.5,
             delay: 0.0,
@@ -35,9 +38,10 @@ public class AppContainerViewController: UIViewController {
             animations: {
                 splashViewController.view.frame.origin.y = self.view.bounds.height
             },
-            completion: { completed in
+            completion: { [weak self] completed in
                 splashViewController.view.removeFromSuperview()
                 splashViewController.removeFromParentViewController()
+                self?.childViewControllers.first?.viewDidAppear(true)
             }
         )
     }
