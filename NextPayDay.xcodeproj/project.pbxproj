@@ -15,6 +15,9 @@
 		B73D17A41FAACC7200249DC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73D17A21FAACC7200249DC7 /* LaunchScreen.storyboard */; };
 		B73D17AF1FAACC7200249DC7 /* NextPayDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D17AE1FAACC7200249DC7 /* NextPayDayTests.swift */; };
 		B73D17BA1FAACC7200249DC7 /* NextPayDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D17B91FAACC7200249DC7 /* NextPayDayUITests.swift */; };
+		B73D17CB1FAAD0CC00249DC7 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D17CA1FAAD0CC00249DC7 /* SplashViewController.swift */; };
+		B73D17CD1FAAD0F300249DC7 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73D17CC1FAAD0F300249DC7 /* Splash.storyboard */; };
+		B73D17CF1FAAD1BE00249DC7 /* AppContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73D17CE1FAAD1BE00249DC7 /* AppContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		B73D17B51FAACC7200249DC7 /* NextPayDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextPayDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73D17B91FAACC7200249DC7 /* NextPayDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPayDayUITests.swift; sourceTree = "<group>"; };
 		B73D17BB1FAACC7200249DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B73D17CA1FAAD0CC00249DC7 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		B73D17CC1FAAD0F300249DC7 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		B73D17CE1FAAD1BE00249DC7 /* AppContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,10 @@
 		B73D17951FAACC7200249DC7 /* NextPayDay */ = {
 			isa = PBXGroup;
 			children = (
+				B73D17C81FAACCCA00249DC7 /* ViewControllers */,
+				B73D17C91FAACCD500249DC7 /* UI */,
+				B73D17C71FAACCB600249DC7 /* Resources */,
 				B73D17961FAACC7200249DC7 /* AppDelegate.swift */,
-				B73D17981FAACC7200249DC7 /* ViewController.swift */,
-				B73D179A1FAACC7200249DC7 /* Main.storyboard */,
-				B73D17A01FAACC7200249DC7 /* Assets.xcassets */,
-				B73D17A21FAACC7200249DC7 /* LaunchScreen.storyboard */,
-				B73D17A51FAACC7200249DC7 /* Info.plist */,
-				B73D179D1FAACC7200249DC7 /* NextPayDay.xcdatamodeld */,
 			);
 			path = NextPayDay;
 			sourceTree = "<group>";
@@ -126,6 +129,36 @@
 				B73D17BB1FAACC7200249DC7 /* Info.plist */,
 			);
 			path = NextPayDayUITests;
+			sourceTree = "<group>";
+		};
+		B73D17C71FAACCB600249DC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B73D179D1FAACC7200249DC7 /* NextPayDay.xcdatamodeld */,
+				B73D17A51FAACC7200249DC7 /* Info.plist */,
+				B73D17A01FAACC7200249DC7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B73D17C81FAACCCA00249DC7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B73D17981FAACC7200249DC7 /* ViewController.swift */,
+				B73D17CE1FAAD1BE00249DC7 /* AppContainerViewController.swift */,
+				B73D17CA1FAAD0CC00249DC7 /* SplashViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B73D17C91FAACCD500249DC7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B73D179A1FAACC7200249DC7 /* Main.storyboard */,
+				B73D17A21FAACC7200249DC7 /* LaunchScreen.storyboard */,
+				B73D17CC1FAAD0F300249DC7 /* Splash.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +271,7 @@
 				B73D17A41FAACC7200249DC7 /* LaunchScreen.storyboard in Resources */,
 				B73D17A11FAACC7200249DC7 /* Assets.xcassets in Resources */,
 				B73D179C1FAACC7200249DC7 /* Main.storyboard in Resources */,
+				B73D17CD1FAAD0F300249DC7 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +299,8 @@
 				B73D17991FAACC7200249DC7 /* ViewController.swift in Sources */,
 				B73D179F1FAACC7200249DC7 /* NextPayDay.xcdatamodeld in Sources */,
 				B73D17971FAACC7200249DC7 /* AppDelegate.swift in Sources */,
+				B73D17CB1FAAD0CC00249DC7 /* SplashViewController.swift in Sources */,
+				B73D17CF1FAAD1BE00249DC7 /* AppContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TRM99TMZD2;
-				INFOPLIST_FILE = NextPayDay/Info.plist;
+				INFOPLIST_FILE = NextPayDay/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wendell.apps.NextPayDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,7 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TRM99TMZD2;
-				INFOPLIST_FILE = NextPayDay/Info.plist;
+				INFOPLIST_FILE = NextPayDay/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wendell.apps.NextPayDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
